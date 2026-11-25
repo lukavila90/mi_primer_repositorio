@@ -1,11 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Diario Digital</title>
 </head>
 <body>
-    
+<!-- TODO (Live Coding): Reemplazá los div por header, nav, main, section, article, aside y footer según el rol de cada zona -->
+    <header>
+        <h1>Diario Digital</h1>
+        <nav aria-label="Navegación principal">
+            <a href="#portada">Portada</a>
+            <a href="#deportes">Deportes</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <section id="portada">
+            <h2>Portada</h2>
+            <article>
+                <h3>Se inauguró la nueva biblioteca</h3>
+                <p>La obra tardó dos años y ya está abierta al público.</p>
+            </article>
+            <article>
+                <h3>El clima de la semana</h3>
+                <p>Se esperan lluvias hacia el fin de semana.</p>
+            </article>
+        </section>
+        <section id="deportes">
+            <h2>Deportes</h2>
+            <article>
+                <h3>Final del torneo local</h3>
+                <p>El domingo se define el campeón.</p>
+            </article>
+        </section>
+        <aside>
+            <h2>Más leídas</h2>
+            <ul>
+                <li>Se inauguró la nueva biblioteca</li>
+                <li>Final del torneo local</li>
+            </ul>
+        </aside>
+    </main>
+    <footer id="contacto">
+        <p>Contacto: redaccion@diario.example</p>
+    </footer>
 </body>
 </html>
