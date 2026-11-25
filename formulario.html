@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción al curso</title>
+</head>
+<body>
+    <h1>Inscripción al curso</h1>
+        <!-- Los campos, en orden:                                                      -->
+    <!--    nombre     text,     required, minlength 3                              -->
+    <form action="/inscripcion" method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required minlength="3">
+        <br>
+    <!--    email      email,    required                                           -->
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+    <!--    edad       number,   min 18, max 99                                     -->
+        <label for="edad">Edad</label>
+        <input type="number" id="edad" name="edad" min="18" max="99">
+        <br>
+    <!--    telefono   text,     pattern de 10 dígitos                              -->
+        <label for="telefono">Telefono</label>
+        <input type="text" name="telefono" id="telefono" pattern="[0-9]{10}">
+        <br>
+    <!--    clave      password, required, minlength 8                              -->
+        <label for="contrasena">Constraseña</label>
+        <input type="password" name="contrasena" id="contrasena" required minlength="8">
+        <br>
+    <!--    inicio     date                                                         -->
+        <label for="inicio">Inicio</label>
+        <input type="date" id="inicio" name="inicio">
+        <br>
+    <!--    curso      select con dos option                                        -->
+        <label for="opcion">Curso</label>
+        <select name="curso" id="curso">
+            <option value="frontend">FrontEnd</option>
+            <option value="backend">BackEnd</option>
+        </select>
+        <br>
+    <!--    turno      dos radio con el MISMO name, dentro de fieldset + legend     -->
+
+    <!--    comentarios textarea                                                    -->
+    <!--    acepto     checkbox, required -->
+
+
+    </form>
+    <!-- action: a dónde viajan los datos. method: cómo viajan (POST = ocultos, GET = en la URL) -->
+<!-- TODO (Live Coding): Armá el form con action="/inscripcion" y method="POST"; cada campo con su label vinculado, su name y su validación -->
+    <!-- 1. Abrí el form:  <form action="/inscripcion" method="POST">            -->
+    <!-- 2. Cada campo son DOS etiquetas: <label for="x"> y <input id="x" name="x"> -->
+    <!--    El for y el id tienen que ser idénticos. Sin name, el dato no viaja.   -->
+    <!-- 3. Validaciones: required, minlength, type="email", min / max, pattern     -->
+    <!--                                                                            -->
+    <!-- Los campos, en orden:                                                      -->
+    <!--    nombre     text,     required, minlength 3                              -->
+    <!--    email      email,    required                                           -->
+    <!--    edad       number,   min 18, max 99                                     -->
+    <!--    telefono   text,     pattern de 10 dígitos                              -->
+    <!--    clave      password, required, minlength 8                              -->
+    <!--    inicio     date                                                         -->
+    <!--    curso      select con dos option                                        -->
+    <!--    turno      dos radio con el MISMO name, dentro de fieldset + legend     -->
+    <!--    comentarios textarea                                                    -->
+    <!--    acepto     checkbox, required                                           -->
+    <!-- 4. Cerrá con <button type="submit">                                        -->
+    <!--                                                                            -->
+    <!-- Y al final: </form>                                                        -->
+</body>
+</html>
